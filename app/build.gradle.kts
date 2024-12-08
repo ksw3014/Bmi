@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.ian.bmi"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ian.bmi"
-        minSdk = 34
-        targetSdk = 34
+        minSdk = 35
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

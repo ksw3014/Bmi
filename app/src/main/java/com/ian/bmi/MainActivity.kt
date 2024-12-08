@@ -1,6 +1,8 @@
 package com.ian.bmi
 
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun bmi(view: View){
+        val weight = binding.edWeight.text.toString().toFloat()
+        val height = binding.edHeight.text.toString().toFloat()
+        val bmi = weight / (height * height)
+        Log.d("BMI", bmi.toString())
     }
 }
